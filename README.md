@@ -9,13 +9,14 @@ This repository contains the implementation of a two-step deep learning model fo
 - Two-step detection: First, identify the presence of diabetic retinopathy. Second, classify severity.
 - Deep learning power: Utilizes InceptionResNetV2 and DenseNet121 for robust and accurate predictions.
 - Dataset balancing: Addresses class imbalance challenges through strategic data augmentation.
+## Dataset
+The dataset used for this project is the [APTOS 2019 Blindness Detection dataset] (https://www.kaggle.com/c/aptos2019-blindness-detection) from Kaggle. It consists of retinal fundus images with labels for severity levels of diabetic retinopathy. To replicate and experiment with the project, download the dataset from the provided Kaggle link and place it in the `data/` directory.
 
 ## How to Use
 1. Clone the repository: `git clone https://github.com/Mohithv13/DiabeticRetinopathyDetection.git`
 2. Install dependencies: `pip install -r requirements.txt`
-3. Run the application: `python main_app.py`
+3. Run the application: `streamlit run app.py`
 
 ## Project Structure
-- `models/`: Contains pre-trained models for InceptionResNetV2 and DenseNet121.
-- `data/`: Placeholder for the dataset. Replace with your diabetic retinopathy dataset.
-- `main_app.py`: Main script to run the application and predict new images.
+- `Final_main/`: Contains pre-trained models for InceptionResNetV2 and DenseNet121.
+- `streamlit run app.py/`: Main script to run the application and predict new images.
